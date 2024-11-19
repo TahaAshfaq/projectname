@@ -1,0 +1,83 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .aboutme{
+    padding: 70px 100px;
+    /* white-space: nowrap;  */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  .aboutcontent{
+    padding: 0px 20px;
+    margin-top: -10px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 200%;
+    color: #33336B;
+
+  }
+  .head{
+    padding: 0px 20px;
+
+    background: linear-gradient(to right, #000046, #0000d4); /* Gradient definition */
+    -webkit-background-clip: text; /* Clipping background to text */
+    -webkit-text-fill-color: transparent; /* Making text transparent to show the gradient */
+        font-size: 64px;
+        font-weight: 500;
+
+    line-height: 55px;
+    letter-spacing: -2.5px;
+  }
+  .aboutcircle{
+    margin: -117px 0px 0px  143px;
+
+  }
+  #me{
+    margin-left: 20px;
+  }
+  
+  @media (max-width: 1070px) {
+    .head{
+      font-size: 64px;
+      line-height: 70px;
+      letter-spacing: -3px;
+    }
+
+    .aboutme{
+      padding: 50px 50px;
+     
+    }
+    .aboutcircle{
+        margin: -125px 0px 0px  143px;
+    
+      }
+
+  }
+  @media (max-width: 770px) {
+    .head{
+      font-size: 30px;
+      line-height: 70px;
+      letter-spacing: -3px;
+    }
+
+    .aboutme{
+      padding: 50px 10px;
+     
+    }
+    .aboutcircle{
+        width: 100px;
+        margin: -127px 0px 0px  75px;
+    
+      }
+      .aboutcontent{
+        padding: 0px 20px;
+        margin-top: -50px;
+        font-size: 18px;
+    
+      }
+  }
