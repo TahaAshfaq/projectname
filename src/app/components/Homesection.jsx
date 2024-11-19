@@ -23,14 +23,18 @@ export default function Homesection() {
           height={80}
         />
         <p className="homet3">
-          Hey! I am Taha, a multidisciplinary UI/UX designer crafting
-          captivating
+          Hey! I am Taha, a multidisciplinary UI/UX designer who crafts
+          intuitive
           <br />
-          experiences by blending creativity with functionality.
+          and visually captivating experiences,blending creativity with
+          functionality to
+          <br />
+          bring ideas to life.
         </p>
         <p className="homet3mobile">
-          Hey! I am Taha, a multidisciplinary UI/UX designer crafting
-          captivating experiences by blending creativity with functionality.
+        Hey! I am Taha, a multidisciplinary UI/UX designer who crafts
+        intuitive and visually captivating experiences,blending creativity with
+        functionality to bring ideas to life.
         </p>
       </div>
       <div className="homebtn">
