@@ -26,15 +26,15 @@ export default function Homesection() {
           Hey! I am Taha, a multidisciplinary UI/UX designer who crafts
           intuitive
           <br />
-          and visually captivating experiences,blending creativity with
+          and visually captivating experiences, blending creativity with
           functionality to
           <br />
           bring ideas to life.
         </p>
         <p className="homet3mobile">
-        Hey! I am Taha, a multidisciplinary UI/UX designer who crafts
-        intuitive and visually captivating experiences,blending creativity with
-        functionality to bring ideas to life.
+          Hey! I am Taha, a multidisciplinary UI/UX designer who crafts
+          intuitive and visually captivating experiences, blending creativity
+          with functionality to bring ideas to life.
         </p>
       </div>
       <div className="homebtn">
