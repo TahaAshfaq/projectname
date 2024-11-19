@@ -6,7 +6,9 @@ import Image from "next/image";
 export default function Aboutme() {
   return (
     <div className="aboutme">
-      <p className="head">Why <span id="me">Me</span></p>
+      <p className="head">
+        Why <span id="me">Me</span>
+      </p>
       <Image
         className="aboutcircle"
         src={aboutcircle}
@@ -22,7 +24,7 @@ export default function Aboutme() {
         user-centric solutions that drive success.With a strong foundation in
         UX/UI principles and hands-on experience in dynamic web technologies, I
         excel in translating complex ideas into elegant and accessible
-        interfaces.
+        interfaces.hahaha
       </p>
     </div>
   );
