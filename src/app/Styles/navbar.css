@@ -89,9 +89,10 @@
   
   /* Responsive Design */
   @media (max-width: 770px) {
-    /* .navbar {
-        align-items: start;
-      } */
+    .navbar {
+      padding: 15px 20px;
+
+      }
       .mobilenav{
         display:flex;
       }

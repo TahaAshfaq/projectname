@@ -63,21 +63,22 @@
       font-size: 30px;
       line-height: 70px;
       letter-spacing: -3px;
+      padding: 0px;
     }
 
     .aboutme{
-      padding: 50px 10px;
+      padding: 50px 20px;
      
     }
     .aboutcircle{
         width: 100px;
-        margin: -127px 0px 0px  75px;
+        margin: -127px 0px 0px 55px;
     
       }
       .aboutcontent{
-        padding: 0px 20px;
         margin-top: -50px;
         font-size: 18px;
+        padding: 0px;
     
       }
   }
