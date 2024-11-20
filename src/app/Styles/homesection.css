@@ -49,13 +49,13 @@
 
   .homet3{
     padding: 0px 20px;
-    margin-top: -20px;
-    color: #000046;
-    font-size: 16px;
+    margin-top: 0px;
+    font-size: 18px;
     font-weight: 300;
+    color: #33336B;
 
-    line-height: 25px;
-    letter-spacing: 0.2px;
+    /* line-height: 25px; */
+    
 
 
   }
@@ -144,7 +144,7 @@
   @media (max-width: 770px) {
     .herosection{
       padding: 50px 10px;
-      gap: 80px;
+      gap: 50px;
     }
 
     .homet1 {
@@ -178,12 +178,15 @@
     display: flex;
     padding: 0px 70px 0px 20px;
 
-    color: #000046;
-    font-size: 16px;
+
+    font-size: 18px;
     font-weight: 300;
+    color: #33336B;
+
+
+
     margin-top: -20px;
 
-    line-height: 25px;
     letter-spacing: 0.2px;
 
 

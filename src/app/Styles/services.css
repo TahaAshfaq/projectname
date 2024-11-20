@@ -1,0 +1,67 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.servicescontent{
+        padding: 30px 20px;
+        font-size: 18px;
+        font-weight: 300;
+        color: #33336B;
+}
+.servicecard{
+    margin: 0px 0px 20px 20px;
+    width: 340px;
+    height:230px;
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    justify-content: start;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+}
+.servicepic{
+    margin-left: -5px;
+}
+.cardhead{
+    font-size: 16px;
+    font-weight: 500;
+    color: #01016A;
+    margin-left: 20px;
+    margin-top: -5px;
+
+}
+.cardcontent{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 7px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #33336B;
+}
+.myservices{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 770px) {
+  .servicescontent{
+
+    font-size: 18px;
+    font-weight: 300;
+    color: #33336B;
+    letter-spacing: 0.2px;
+
+    margin-top: -20px;
+    margin-left: -20px;
+  }
+  .servicecard{
+    margin: 0px 0px 20px 0px;
+    width: 300px;
+    height:230px;
+}
+
+  }
