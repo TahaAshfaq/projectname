@@ -24,7 +24,7 @@ export default function Aboutme() {
         user-centric solutions that drive success.With a strong foundation in
         UX/UI principles and hands-on experience in dynamic web technologies, I
         excel in translating complex ideas into elegant and accessible
-        interfaces.hahaha
+        interfaces.
       </p>
     </div>
   );
