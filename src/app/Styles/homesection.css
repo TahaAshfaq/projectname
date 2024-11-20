@@ -182,12 +182,12 @@
     font-size: 18px;
     font-weight: 300;
     color: #33336B;
-
+    line-height: auto;
 
 
     margin-top: -20px;
+    line-height: 170%;
 
-    letter-spacing: 0.2px;
 
 
   }

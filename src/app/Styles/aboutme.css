@@ -58,9 +58,9 @@
   }
   @media (max-width: 770px) {
     .head{
-      font-size: 30px;
+      font-size: 40px;
       line-height: 70px;
-      letter-spacing: -3px;
+      letter-spacing: -2.5px;
       padding: 0px;
       padding-right: 10px;
     }
@@ -70,14 +70,18 @@
      
     }
     .aboutcircle{
-        width: 100px;
-        margin: -127px 0px 0px 55px;
+        width: 120px;
+        margin: -125px 0px 0px 78px;
     
       }
       .aboutcontent{
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 170%;
+
         margin-top: -50px;
-        font-size: 22px;
         padding: 0px;
-    
+
       }
+      
   }
