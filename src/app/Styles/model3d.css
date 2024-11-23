@@ -1,0 +1,26 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .text3d{
+    padding: 0px 200px;
+    margin-bottom: -125px;
+    z-index: 1;
+    font-size: 18px;
+    font-weight: 300;
+    color: #33336B;
+    position: relative; 
+  }
+  #ifocus{
+    color: #4f4fe6;
+    font-weight: 600;
+  }
+  .model3d{
+    margin-top: -100px;
+    z-index: -1;
+    margin-bottom: 100px;
+
+  }

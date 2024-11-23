@@ -15,6 +15,7 @@
     align-items: start;
     justify-content: center;
     gap: 70px;
+    margin-bottom: 50px;
   }
   .main{
     gap: 200px;
@@ -52,12 +53,7 @@
     margin-top: 0px;
     font-size: 18px;
     font-weight: 300;
-    color: #33336B;
-
-    /* line-height: 25px; */
-    
-
-
+    color: #33336B;    
   }
   .home2svg{
     margin-top: -50px;
@@ -79,13 +75,15 @@
     overflow: hidden;
     gap: 7px;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 300;
     padding: 7px 30px;
     border-radius: 100px;
     border: none;
     color: white;
     z-index: 2;
     transition: color 0.7s ease;
+    font-family: inherit; /* Inherits the font from the parent element */
+    
   }
   
   .homebtnbtn::before {

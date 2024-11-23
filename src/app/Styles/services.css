@@ -42,19 +42,124 @@
     color: #33336B;
 }
 .myservices{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     margin-left: 20px;
 
 }
+.myprojects{
+   /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    display: flex;
+    flex-wrap: wrap;
+  gap: 20px;
+  margin-left: 20px;
+}
+
+/* --------------------------------------------------- */
+.projectcard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Use 'flex-start' instead of 'left' */
+  padding: 12px 17px;
+  gap: 70px; 
+  border-radius: 10px;
+  width: 535px;
+  height: 333.04px;
+  position: relative; /* Needed for pseudo-element */
+  overflow: hidden; /* Ensures background stays within rounded corners */
+}
+
+.projectcard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000; /* Background color */
+  opacity: 0.7; /* 50% opacity */
+  z-index: 0; /* Send it behind content */
+  border-radius: 10px; /* Match the border-radius of the card */
+  transition: opacity 0.5s ease-in; /* Smooth transition for hover effect */
+  cursor: pointer;
+
+}
+
+.projectcard:hover::before {
+  opacity: 0.6; 
+}
+.projectcard * {
+  position: relative;
+  z-index: 1;
+  opacity: 1; 
+  transition: opacity 0.3s ease;
+}
+
+/* .projectcard:hover * {
+  opacity: 0; 
+} */
+
+
+.projectcardt1,
+.projectcardt2{
+  position: relative; /* Ensure content is above the background */
+  z-index: 1;
+  color: white; /* Fully opaque text and button */
+}
+
+.projectcardt1 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.projectcardt2 {
+  font-size: 32px;
+  line-height: 37px;
+  font-weight: 500;
+}
+
+.viewproject {
+  width: 120px;
+  height: 30px;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: inherit; 
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.189);
+  border-radius: 5px;
+  color: white;
+  cursor: pointer; 
+  transition: all 0.3s ease; 
+}
+
+.viewproject:hover {
+  border: 1px solid rgb(255, 255, 255);
+}
+
 
 @media (max-width: 1300px) {
+  .myservices{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 20px;
+
+    gap: 20px;
+    margin-left: 20px;
+
+}
+.myprojects{
+   display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  
+  gap: 20px;
+  margin-left: 20px;
+}
   .servicecard{
     width: 100%;
-  }
-  .myservices{
-    margin-left: 20px;
   }
   }
   

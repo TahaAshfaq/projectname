@@ -11,7 +11,7 @@ export default function Services() {
   const myservicescard = myservices.map((singlecard) => {
     return (
       <ServiceCard
-        key={singlecard.heading} // Add a unique key for each item
+        key={singlecard.id} // Add a unique key for each item
         path={singlecard.imagePath}
         head={singlecard.heading}
         content={singlecard.description}

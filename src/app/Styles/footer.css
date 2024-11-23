@@ -1,0 +1,24 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .foot{
+      padding: 70px 120px;
+      background: linear-gradient(to bottom, #010147, #01019D); /* Gradient definition */
+
+  }
+.footerhead{
+    font-size: 96px;
+    line-height: 120px;
+    letter-spacing: -5px;
+    font-weight: 500;
+    color:rgb(255, 255, 255)
+}
+.foothead2{
+    margin-top: 27px;
+    color: white;
+    font-size: 16px;
+    font-weight: 200;
+}
