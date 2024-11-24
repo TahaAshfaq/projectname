@@ -6,8 +6,8 @@
   }
   .foot{
       padding: 70px 120px;
-      background: linear-gradient(to bottom, #010147, #01019D); /* Gradient definition */
-
+      background: linear-gradient(to bottom, #000055, #0000ae); /* Gradient definition */
+      margin-top: 100px;
   }
 .footerhead{
     font-size: 96px;
@@ -21,4 +21,57 @@
     color: white;
     font-size: 16px;
     font-weight: 200;
+}
+.footcontent{
+    margin-top:70px ;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 170px;
+}
+.singlesocial{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: left;
+}
+.footerp{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+.socials{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contactupper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+.singlecontact{
+    display: flex;
+    flex-direction: column;
+
+}
+.contactpupper{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+.contactpdown{
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.393);
+}
+.contacts{
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
 }
