@@ -127,18 +127,44 @@
   height: 30px;
   font-size: 12px;
   font-weight: 400;
-  font-family: inherit; 
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.189);
+  font-family: inherit;
+  background-color: rgba(255, 255, 255, 0.172);
+  border: 1px solid rgba(255, 255, 255, 0); /* Subtle initial border */
   border-radius: 5px;
   color: white;
-  cursor: pointer; 
-  transition: all 0.3s ease; 
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  --mouse-x: 50%;
+  --mouse-y: 50%;
+  transition: border-color 0.3s ease;
+}
+
+.viewproject::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 5px;
+  padding: 1px; /* Ensure glow stays within the border region */
+  background: radial-gradient(circle at var(--mouse-x) var(--mouse-y), rgb(255, 255, 255), rgba(255, 255, 255, 0) 80%);
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); /* Ensures glow only affects the border */
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+  z-index: -1; /* Keeps glow behind content */
+  opacity: 0; /* Hidden until hover */
+  transition: opacity 0.3s ease, background 0.3s ease;
+}
+
+.viewproject:hover::before {
+  opacity: 1; /* Activate border glow on hover */
 }
 
 .viewproject:hover {
-  border: 1px solid rgb(255, 255, 255);
+  background-color: #ffffff00;
+  border-color: rgba(255, 255, 255, 0); /* Subtle enhancement of base border */
 }
+
 
 
 @media (max-width: 1300px) {
