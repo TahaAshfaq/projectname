@@ -10,6 +10,10 @@ import pic7 from "../media/location.svg";
 import pic8 from "../media/phone.svg";
 
 import Image from "next/image";
+const Spline = dynamic(() => import("@splinetool/react-spline"), {
+  ssr: false,
+});
+import dynamic from "next/dynamic";
 
 export default function Footer() {
   return (
@@ -28,7 +32,11 @@ export default function Footer() {
       </p>
       <p className="foothead2">Let’s get in contact & work together!!!</p>
       <div className="footcontent">
-        <Image src={pic1} alt="dsfklsjdfkj" width={200} height={200} />
+        {/* <Image className="footimg" src={pic1} alt="dsfklsjdfkj" width={300} height={300} /> */}
+        <Spline scene="https://prod.spline.design/8TQtv-6usnYGWwFW/scene.splinecode"
+          style={{ width: "300px", height: "300px" }}
+          />
+        <div className="footcontentcontent">
         <div className="socials">
           <div className="singlesocial">
             <Image src={pic2} alt="dsfklsjdfkj" width={20} height={20} />
@@ -72,6 +80,7 @@ export default function Footer() {
             </div>
             <p className="contactpdown">tahaashfaqmalik@gmail.com</p>
           </div>
+        </div>
         </div>
       </div>
     </div>

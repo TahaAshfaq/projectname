@@ -1,5 +1,5 @@
 /* Reset */
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,8 +20,9 @@
     align-items:start;
     justify-content: start;
     border: 1px solid #D1D1D1;
-    border-radius: 8px;
+    border-radius: 5px;
 }
+
 .servicepic{
     margin-left: -5px;
 }
@@ -51,26 +52,27 @@
 
 }
 .myprojects{
-   /* display: grid;
-    grid-template-columns: repeat(3, 1fr); */
-    display: flex;
-    flex-wrap: wrap;
-  gap: 20px;
-  margin-left: 20px;
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr); */
+  display: flex;
+  flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 20px;
 }
 
 /* --------------------------------------------------- */
 .projectcard {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start; /* Use 'flex-start' instead of 'left' */
-  padding: 12px 17px;
-  gap: 70px; 
-  border-radius: 10px;
   width: 535px;
   height: 333.04px;
-  position: relative; /* Needed for pseudo-element */
-  overflow: hidden; /* Ensures background stays within rounded corners */
+  display: flex;
+  flex-direction: column;
+  align-items:start;
+  justify-content: start; 
+  padding: 12px 17px;
+  gap: 73px; 
+  border-radius: 5px;
+  position: relative; 
+  overflow: hidden; 
 }
 
 .projectcard::before {
@@ -80,11 +82,11 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000000; /* Background color */
-  opacity: 0.7; /* 50% opacity */
-  z-index: 0; /* Send it behind content */
-  border-radius: 10px; /* Match the border-radius of the card */
-  transition: opacity 0.5s ease-in; /* Smooth transition for hover effect */
+  background-color: #000000; 
+  opacity: 0.7; 
+  z-index: 0;  
+  border-radius: 5px; 
+  transition: opacity 0.5s ease-in;
   cursor: pointer;
 
 }
@@ -112,8 +114,8 @@
 }
 
 .projectcardt1 {
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 12px;
+  font-weight: 300;
 }
 
 .projectcardt2 {
@@ -127,15 +129,15 @@
   height: 30px;
   font-size: 12px;
   font-weight: 400;
-  font-family: inherit;
-  background-color: rgba(255, 255, 255, 0.172);
+  font-family: inherit; 
+  background-color: hsla(0, 0%, 100%, 0.2);
   border: 1px solid rgba(255, 255, 255, 0); /* Subtle initial border */
   border-radius: 5px;
   color: white;
-  cursor: pointer;
-  position: relative;
+  cursor: pointer; 
+  position: relative; 
   overflow: hidden;
-  --mouse-x: 50%;
+  --mouse-x: 50%; /* Default glow position */
   --mouse-y: 50%;
   transition: border-color 0.3s ease;
 }
@@ -151,9 +153,9 @@
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   mask-composite: exclude;
   -webkit-mask-composite: destination-out;
-  z-index: -1; /* Keeps glow behind content */
-  opacity: 0; /* Hidden until hover */
+  z-index: -1; /* Stays behind content */
   transition: opacity 0.3s ease, background 0.3s ease;
+  opacity: 0; /* Hidden until hover */
 }
 
 .viewproject:hover::before {
@@ -161,29 +163,32 @@
 }
 
 .viewproject:hover {
-  background-color: #ffffff00;
   border-color: rgba(255, 255, 255, 0); /* Subtle enhancement of base border */
+  background-color: transparent;
 }
 
+@media (max-width: 1330px) {
+  .myprojects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    padding-right: 40px;
+  }
 
+  .projectcard {
+    width: 100%; 
+  }
+}
 
 @media (max-width: 1300px) {
   .myservices{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-left: 20px;
+    padding-right: 20px;
 
-    gap: 20px;
-    margin-left: 20px;
 
 }
-.myprojects{
-   display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  
-  gap: 20px;
-  margin-left: 20px;
-}
+
   .servicecard{
     width: 100%;
   }
@@ -194,6 +199,18 @@
   .myservices{
     grid-template-columns: repeat(2, 1fr);
 }
+.projectcard {
+  gap: 87px; 
+}
+.projectcardt2 {
+  font-size: 24px;
+  line-height: 28px;
+}
+/* .myprojects {
+  grid-template-columns: repeat(1, 1fr);
+  height: 100%;
+
+} */
   }
 
 @media (max-width: 770px) {
@@ -212,11 +229,41 @@
   }
   .myservices{
     margin-left: 0px;
+    padding-right: 0px;
+
+  }
+  .myprojects{
+    margin-left: 0px;
+    grid-template-columns: repeat(1, 1fr);
+    padding-right: 0px;
+
+  }
+  .projectcard {
+    height: 425px;
+    gap: 267px;
+  }
+  .projectcardt2 {
+    font-size: 32px;
+    line-height: 37px;
+    font-weight: 500;
+  }
+  .viewproject{
+    display: none;
   }
 }
 @media (max-width: 615px) {
   .myservices{
     grid-template-columns: repeat(1, 1fr);
+    padding-right: 0px;
+
+}
+.projectcard {
+  height: 225px;
+  gap: 107px;
+}
+.projectcardt2 {
+  font-size: 20px;
+  line-height: 24px;
 }
 }
 

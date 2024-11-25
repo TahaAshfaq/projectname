@@ -12,7 +12,7 @@ export default function Model3d() {
         <span id="ifocus">I focus</span> on each component of UI<br />to make the <span id="ifocus">successful product</span>
       </p>
       <div className="model3d">
-        <Spline scene="https://prod.spline.design/Akz-S4Ac8DAc7a21/scene.splinecode" />
+        <Spline scene="https://prod.spline.design/QkCQ7ys0q8ajvnPD/scene.splinecode" />
       </div>
     </>
   );

@@ -1,4 +1,4 @@
-/* Reset */
+/* Reset
 * {
     margin: 0;
     padding: 0;
@@ -46,7 +46,7 @@
   }
   
   .navLinks a:hover {
-    color: #4F4FE6; /* Adjust based on SVG hover effect */
+    color: #4F4FE6; 
     
 
   }
@@ -65,13 +65,12 @@
 
   }
   
-  .navbtn:hover { /* Remove space here */
+  .navbtn:hover { 
     cursor: pointer;
-    transform: scale(1.05); /* Correct scale value (scale from 0 to 1) */
+    transform: scale(1.05);
   }
   
 
-  /* Hamburger Menu */
   .hamburger {
     display: none;
     flex-direction: column;
@@ -88,7 +87,6 @@
 
   }
   
-  /* Responsive Design */
   @media (max-width: 770px) {
     .navbar {
       padding: 15px 30px;
@@ -122,3 +120,159 @@
     }
   }
   
+   */
+
+/* General Reset */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile Menu */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+
+  }
+  .mobilenav{
+    display: none;
+  }
+  .navelements {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 300;
+    color: #000046;
+    gap: 30px;
+    cursor: pointer;
+  }
+  
+
+  .navelements ul li a{
+    color: #000046;
+  }
+  
+  .navLinks {
+    display: flex;
+    list-style: none;
+  }
+  
+  .navLinks li {
+    margin: 0 10px;
+  }
+  
+  .navLinks a {
+    transition: color 0.3s;
+  }
+  
+  .navLinks a:hover {
+    color: #4F4FE6; 
+    
+
+  }
+  
+  .navbtn {
+    background-color: #4F4FE6;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+    transition: transform 0.2s ease;
+    font-family: inherit; 
+
+  }
+  
+  .navbtn:hover { 
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: #4F4FE6;
+  cursor: pointer;
+}
+
+.mobileMenu {
+  display: none;
+  background-color: #33336B;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 999;
+}
+
+.mobileMenu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.mobileMenu ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.mobileMenu ul li a:hover {
+  color: #00A8FF;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbtn {display: none;}
+  .navLinks {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .mobile-active {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #33336B;
+    padding-top: 100px;
+    gap: 20px;
+    z-index: 1000;
+  }
+}

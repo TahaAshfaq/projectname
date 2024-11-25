@@ -22,12 +22,17 @@
     font-size: 16px;
     font-weight: 200;
 }
-.footcontent{
+.footcontent{ 
     margin-top:70px ;
     margin-bottom: 30px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 170px;
+}
+.footcontentcontent{ 
+    display: flex;
+    flex-direction: row;
     gap: 170px;
 }
 .singlesocial{
@@ -70,8 +75,110 @@
     color: rgba(255, 255, 255, 0.393);
 }
 .contacts{
-    margin-left: 100px;
     display: flex;
     flex-direction: column;
     gap: 27px;
 }
+@media (max-width: 1200px) {
+   .footcontent{ 
+    gap: 100px;
+}
+.footcontentcontent{ 
+    gap: 100px;
+}
+
+}
+@media (max-width: 1070px) {
+    .foot{
+        padding: 70px 70px;
+    }
+     
+ .footerhead{
+    font-size: 64px;
+    line-height: 88px;
+    letter-spacing: -2.5px;
+}
+ .contacts{
+     margin-left: 0px;
+     
+ } 
+ }
+ @media (max-width: 900px) {
+    .footcontent{ 
+     gap: 70px;
+ }
+ .footcontentcontent{ 
+    gap: 70px;
+}
+.footimg{
+    width: 250px;
+}
+
+ 
+ }
+ @media (max-width: 770px) {
+
+    /* .footerhead{
+        font-size: 45px;
+        line-height: 69px;
+        letter-spacing: -2.5px;
+    } */
+    /* .footcontent{ 
+        flex-direction: column;
+        align-items:start;
+        justify-items: start;
+    } */
+    .foot{
+        padding: 50px 30px;
+    }
+    .footimg{
+        width: 200px;
+    }
+    
+
+}
+@media (max-width: 690px) {
+    .footimg{
+        width: 300px;
+    }
+    
+
+    .footerhead{
+        font-size: 55px;
+        line-height: 69px;
+        letter-spacing: -2.5px;
+    }
+    .footcontent{ 
+        flex-direction: column;
+        align-items:center;
+        justify-items: start;
+        gap: 70px;
+
+    }
+    .footcontentcontent{ 
+
+        gap: 70px;
+        margin-left: 40px;
+    }
+
+
+
+}
+@media (max-width: 550px) {
+    .footerhead{
+        font-size: 50px;
+        line-height: 64px;
+        letter-spacing: -2.5px;
+    }
+    .footcontentcontent{
+        flex-direction: column;
+        margin-left: 0px;
+
+    }
+}
+/* @media (max-width: 370px) {
+    .footimg{
+        width: 250px;
+    }
+} */
+  
