@@ -121,16 +121,16 @@
  
   @media (max-width: 1070px) {
     .homet2{
-      font-size: 66px;
-      line-height: 70px;
+      font-size: 60px;
+      line-height: 65px;
       letter-spacing: -3px;
 
 
     }
     .home2svg{
       margin-top: -40px;
-      width: 350px;
-      margin-left: 110;
+      width: 330px;
+      margin-left: 100;
 
     }
     .herosection{
@@ -141,6 +141,7 @@
   }
   @media (max-width: 770px) {
     .herosection{
+      margin-top: 100px;
       padding: 50px 10px;
       gap: 50px;
     }
