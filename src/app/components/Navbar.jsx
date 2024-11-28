@@ -37,7 +37,7 @@ export default function Navbar() {
     };
   }, [lastScrollY]);
 
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [screenWidth, setScreenWidth] = useState(0);
 
   useEffect(() => {
     const handleResize = () => setScreenWidth(window.innerWidth);
@@ -59,11 +59,11 @@ export default function Navbar() {
   return (
     <>
       <div className="navcomponent">
-        <nav className={window.innerWidth > 771 ? "navbar" : "navbarmobile"}>
+        <nav className={screenWidth > 771 ? "navbar" : "navbarmobile"}>
           <div className="navupper">
             <div className="navelements">
               <div className="logo">
-                {window.innerWidth > 771 ? (
+                {screenWidth > 771 ? (
                   <Image src={Logo} alt="Logo" width={45} height={45} />
                 ) : (
                   <Image src={mobilelogo} alt="Logo" width={150} height={60} />

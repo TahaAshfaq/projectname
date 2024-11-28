@@ -2,20 +2,10 @@
 import styles from "../Styles/homesection.css";
 import seeprojects from "../media/seeprojects.svg";
 import homet2 from "../media/homet2.svg";
-import { useEffect,useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 
 export default function Homesection() {
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    const handleResize = () => setScreenWidth(window.innerWidth);
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
   return (
     <div className="herosection">
       <div className="main">

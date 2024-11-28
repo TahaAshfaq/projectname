@@ -10,9 +10,10 @@ import pic7 from "../media/location.svg";
 import pic8 from "../media/phone.svg";
 
 import Image from "next/image";
-const Spline = dynamic(() => import("@splinetool/react-spline"), {
-  ssr: false,
-});
+// const Spline = dynamic(() => import("@splinetool/react-spline"), {
+//   ssr: false,
+// });
+import Spline from "@splinetool/react-spline";
 import dynamic from "next/dynamic";
 
 export default function Footer() {
@@ -33,54 +34,55 @@ export default function Footer() {
       <p className="foothead2">Let’s get in contact & work together!!!</p>
       <div className="footcontent">
         {/* <Image className="footimg" src={pic1} alt="dsfklsjdfkj" width={300} height={300} /> */}
-        <Spline scene="https://prod.spline.design/8TQtv-6usnYGWwFW/scene.splinecode"
+        <Spline
+          scene="https://prod.spline.design/8TQtv-6usnYGWwFW/scene.splinecode"
           style={{ width: "300px", height: "300px" }}
-          />
+        />
         <div className="footcontentcontent">
-        <div className="socials">
-          <div className="singlesocial">
-            <Image src={pic2} alt="dsfklsjdfkj" width={20} height={20} />
-            <p className="footerp">DRIBBBLE</p>
-          </div>
-          <div className="singlesocial">
-            <Image src={pic6} alt="dsfklsjdfkj" width={20} height={20} />{" "}
-            <p className="footerp">LINKEDIN</p>
-          </div>
-          <div className="singlesocial">
-            <Image src={pic5} alt="dsfklsjdfkj" width={20} height={20} />
-            <p className="footerp">GITHUB</p>
-          </div>
-          <div className="singlesocial">
-            <Image src={pic4} alt="dsfklsjdfkj" width={20} height={20} />
-            <p className="footerp">INSTAGRAM</p>
-          </div>
-        </div>
-        <div className="contacts">
-          <div className="singlecontact">
-            <div className="contactupper">
-              {" "}
-              <Image src={pic8} alt="dsfklsjdfkj" width={20} height={20} />
-              <p className="contactpupper">Phone</p>
+          <div className="socials">
+            <div className="singlesocial">
+              <Image src={pic2} alt="dsfklsjdfkj" width={20} height={20} />
+              <p className="footerp">DRIBBBLE</p>
             </div>
-            <p className="contactpdown">0309 0109962</p>
-          </div>
-          <div className="singlecontact">
-            <div className="contactupper">
-              {" "}
-              <Image src={pic7} alt="dsfklsjdfkj" width={20} height={20} />
-              <p className="contactpupper">Location</p>
+            <div className="singlesocial">
+              <Image src={pic6} alt="dsfklsjdfkj" width={20} height={20} />{" "}
+              <p className="footerp">LINKEDIN</p>
             </div>
-            <p className="contactpdown">Margalla Town, Islamabad</p>
-          </div>
-          <div className="singlecontact">
-            <div className="contactupper">
-              {" "}
-              <Image src={pic3} alt="dsfklsjdfkj" width={20} height={20} />
-              <p className="contactpupper">Email</p>
+            <div className="singlesocial">
+              <Image src={pic5} alt="dsfklsjdfkj" width={20} height={20} />
+              <p className="footerp">GITHUB</p>
             </div>
-            <p className="contactpdown">tahaashfaqmalik@gmail.com</p>
+            <div className="singlesocial">
+              <Image src={pic4} alt="dsfklsjdfkj" width={20} height={20} />
+              <p className="footerp">INSTAGRAM</p>
+            </div>
           </div>
-        </div>
+          <div className="contacts">
+            <div className="singlecontact">
+              <div className="contactupper">
+                {" "}
+                <Image src={pic8} alt="dsfklsjdfkj" width={20} height={20} />
+                <p className="contactpupper">Phone</p>
+              </div>
+              <p className="contactpdown">0309 0109962</p>
+            </div>
+            <div className="singlecontact">
+              <div className="contactupper">
+                {" "}
+                <Image src={pic7} alt="dsfklsjdfkj" width={20} height={20} />
+                <p className="contactpupper">Location</p>
+              </div>
+              <p className="contactpdown">Margalla Town, Islamabad</p>
+            </div>
+            <div className="singlecontact">
+              <div className="contactupper">
+                {" "}
+                <Image src={pic3} alt="dsfklsjdfkj" width={20} height={20} />
+                <p className="contactpupper">Email</p>
+              </div>
+              <p className="contactpdown">tahaashfaqmalik@gmail.com</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
