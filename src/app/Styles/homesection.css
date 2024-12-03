@@ -141,7 +141,7 @@
   }
   @media (max-width: 770px) {
     .herosection{
-      margin-top: 100px;
+      margin-top: 50px;
       padding: 50px 10px;
       gap: 50px;
     }

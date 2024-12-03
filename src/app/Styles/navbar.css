@@ -16,8 +16,19 @@ Reset
     padding: 15px 30px;
     width: 100%;
 }
-.navbarmobile{
+/* .navbarmobile{
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 7px 20px;
+  width: 100%;
+  position: fixed; 
+  top: 0; 
+  z-index: 1000; 
+  background: linear-gradient(to right, #0000d4, #000046);
+} */
+.navbarmobile{
+  display: none;
   flex-direction: column;
   align-items: flex-start;
   padding: 7px 20px;
@@ -98,6 +109,18 @@ Reset
   .mobileMenu {
 display: none;}
 @media (max-width: 770px) {
+  .navbarmobile{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 7px 20px;
+    width: 100%;
+    position: fixed; 
+    top: 0; /* Sticks the navbar to the top */
+    z-index: 1000; /* Optional: Keep it above other elements */
+    background: linear-gradient(to right, #0000d4, #000046);
+    /* background-color: #4F4FE6; */
+  }
 
   .mobileMenu {
     display: flex;
