@@ -22,7 +22,7 @@
     margin-top: -100px;
     z-index: -1;
 
-    /* margin-bottom: 100px; */
+    margin-bottom: 100px;
 
   }
   .model3dmobile{
@@ -34,7 +34,8 @@
     }
     .model3dmobile{
       display:flex;
-      height: 300px;
+      height: 400px;
+      width: 100%;
     }
 
     .text3d{
