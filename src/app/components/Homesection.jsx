@@ -5,6 +5,13 @@ import homet2 from "../media/homet2.svg";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
+import dynamic from "next/dynamic";
+
+// const Spline = dynamic(() => import("@splinetool/react-spline"), {
+//   ssr: false,
+// });
+import Spline from "@splinetool/react-spline";
+
 export default function Homesection() {
   return (
     <div className="herosection">
@@ -43,6 +50,7 @@ export default function Homesection() {
           See my work
         </button>
       </div>
+      {/* <Spline scene="https://prod.spline.design/QkCQ7ys0q8ajvnPD/scene.splinecode" /> */}
     </div>
   );
 }

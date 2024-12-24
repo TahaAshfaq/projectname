@@ -1,3 +1,5 @@
+"use client"; // Add this directive at the top
+
 import dynamic from "next/dynamic";
 import styles from "../Styles/model3d.css";
 
@@ -9,16 +11,16 @@ import Spline from "@splinetool/react-spline";
 export default function Model3d() {
   return (
     <>
-      <p className="text3d">
+      {/* <p className="text3d">
         <span id="ifocus">I focus</span> on each component of UI
         <br />
         to make the <span id="ifocus">successful product</span>
-      </p>
+      </p> */}
       <div className="model3d">
         <Spline scene="https://prod.spline.design/QkCQ7ys0q8ajvnPD/scene.splinecode" />
       </div>
       <div className="model3dmobile">
-        <Spline scene="https://prod.spline.design/Akz-S4Ac8DAc7a21/scene.splinecode" />
+        <Spline scene="https://prod.spline.design/VFM264cbv5M-dq0g/scene.splinecode" />
       </div>
     </>
   );
