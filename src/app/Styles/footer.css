@@ -5,9 +5,19 @@
     box-sizing: border-box;
   }
   .foot{
-      padding: 70px 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      /* padding: 70px 120px; */
       background: linear-gradient(to bottom, #000055, #0000ae); /* Gradient definition */
       margin-top: 100px;
+  }
+  .footerouter{
+    width: 1330px;
+
+  }
+  .footwidth{
+    padding: 70px 120px;
   }
 .footerhead{
     font-size: 96px;
@@ -89,10 +99,12 @@
 
 }
 @media (max-width: 1070px) {
-    .foot{
-        padding: 70px 70px;
+    .footouter{
+        margin: 0px;
     }
-     
+     .footwidth{
+        padding: 70px;
+     }
  .footerhead{
     font-size: 64px;
     line-height: 88px;

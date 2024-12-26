@@ -20,6 +20,8 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <div className="foot">
+      <div className="footerouter">
+      <div className="footwidth">
       <p className="footerhead">
         There Is{" "}
         <span
@@ -86,6 +88,8 @@ export default function Footer() {
           </div>
         </div>
       </div>
+    </div>
+    </div>
     </div>
   );
 }

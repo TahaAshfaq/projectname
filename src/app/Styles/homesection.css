@@ -4,12 +4,18 @@
     padding: 0;
     box-sizing: border-box;
   }
+  .outerhero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .homet3mobile{
     display: none;
   }
   .herosection{
+    width: 1330px;
     padding: 50px 100px;
-    /* white-space: nowrap;  */
+    max-width: 1330px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

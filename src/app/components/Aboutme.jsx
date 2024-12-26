@@ -5,6 +5,7 @@ import Image from "next/image";
 
 export default function Aboutme() {
   return (
+    <div className="aboutmeouter">
     <div className="aboutme">
       <p className="head">
         Why <span id="me">Me</span>
@@ -26,6 +27,7 @@ export default function Aboutme() {
         excel in translating complex ideas into elegant and accessible
         interfaces.
       </p>
+    </div>
     </div>
   );
 }

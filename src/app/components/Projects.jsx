@@ -22,6 +22,8 @@ export default function Projects() {
     });
 
   return (
+    <div className="aboutmeouter">
+
     <div className="aboutme">
       <p className="head">My Projects</p>
       <p className="servicescontent">
@@ -31,6 +33,7 @@ export default function Projects() {
       <div className="myprojects">
       {myprojectcards}
       </div>
+    </div>
     </div>
   );
 }

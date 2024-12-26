@@ -14,7 +14,9 @@ import Spline from "@splinetool/react-spline";
 
 export default function Homesection() {
   return (
+    <div className="outerhero">
     <div className="herosection">
+      {/* <div className="herosectionwidth"> */}
       <div className="main">
         <p className="homet1">Innovation | Execution | Excellence</p>
         <p className="homet2">
@@ -51,6 +53,7 @@ export default function Homesection() {
         </button>
       </div>
       {/* <Spline scene="https://prod.spline.design/QkCQ7ys0q8ajvnPD/scene.splinecode" /> */}
+    </div>
     </div>
   );
 }

@@ -21,6 +21,8 @@ export default function Services() {
   });
 
   return (
+    <div className="aboutmeouter">
+
     <div className="aboutme">
       <p className="head">My Services</p>
       <p className="servicescontent">
@@ -30,6 +32,7 @@ export default function Services() {
       <div className="myservices">
         {myservicescard} {/* Render the mapped ServiceCard components */}
       </div>
+    </div>
     </div>
   );
 }
