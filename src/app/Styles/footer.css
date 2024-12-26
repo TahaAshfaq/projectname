@@ -152,6 +152,10 @@
 @media (max-width: 690px) {
     .footimg{
         width: 300px;
+
+    }
+    .foot{
+        padding: 0px;
     }
     
 
@@ -167,10 +171,8 @@
         gap: 70px;
 
     }
-    .footcontentcontent{ 
-
-        gap: 70px;
-        margin-left: 40px;
+    .footwidth{
+        padding:30px;
     }
 
 
