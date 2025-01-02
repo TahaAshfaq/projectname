@@ -11,20 +11,120 @@
         font-weight: 300;
         color: #33336B;
 }
-.servicecard{
-    /* margin: 0px 0px 20px 20px; */
+/* .servicecard{
     width: 340px;
-    height:230px;
+    height:210px;
     display: flex;
     flex-direction: column;
     align-items:flex-start;
     justify-content: flex-start;
-    border: 1px solid #D1D1D1;
+    border: 1px solid #eeeeee;
     border-radius: 5px;
+} */
+.servicecard {
+  width: 340px;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.5s ease;
 }
 
+.servicecard::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  /* background: linear-gradient(135deg, rgba(255, 120, 250, 0.5), rgba(0, 210, 255, 0.5)); */
+  z-index: -1;
+  transform: scale(0.9);
+  opacity: 0;
+  border-radius: 10px;
+  transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.servicecard::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #12009e, #00d2ff);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.servicecard:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+.servicecard:hover::before {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.servicecard:hover::after {
+  transform: scaleX(1);
+}
+
+.servicecard-content {
+  position: relative;
+  padding: 20px;
+  z-index: 2;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.servicecard:hover .servicecard-content {
+  transform: translateY(-5px);
+}
+
+.servicecard-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  transition: color 0.3s ease, transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.servicecard:hover .servicecard-title {
+  color: #3a7bd5;
+  transform: translateY(-3px);
+}
+
+.servicecard-description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.servicecard:hover .servicecard-description {
+  opacity: 0.9;
+  transform: translateY(-3px);
+}
+
+.servicecard-icon {
+  font-size: 2em;
+  margin-bottom: 15px;
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.servicecard:hover .servicecard-icon {
+  transform: scale(1.2) rotate(-5deg);
+}
+
+/* -------------------------------- */
 .servicepic{
-    margin-left: -5px;
+    margin: 20px;
 }
 .cardhead{
     font-size: 16px;
@@ -92,7 +192,7 @@
 }
 
 .projectcard:hover::before {
-  opacity: 0.6; 
+  opacity: 0.5; 
 }
 .projectcard * {
   position: relative;

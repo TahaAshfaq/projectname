@@ -11,8 +11,8 @@ export default function Services(props) {
         className="servicepic"
         src={props.path}
         alt="servicCards"
-        width={130}
-        height={130}
+        width={70}
+        height={70}
       />
       <p className="cardhead">{props.head}</p>
       <p className="cardcontent">

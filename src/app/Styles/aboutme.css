@@ -38,7 +38,7 @@
   .head{
     padding: 0px 20px;
 
-    background: linear-gradient(to right, #000046, #0000d4); /* Gradient definition */
+    background: linear-gradient(to right, #00006b, #0091ff); /* Gradient definition */
     -webkit-background-clip: text; /* Clipping background to text */
     -webkit-text-fill-color: transparent; /* Making text transparent to show the gradient */
         font-size: 64px;
