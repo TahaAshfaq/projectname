@@ -45,12 +45,42 @@
     flex-direction: row;
     gap: 170px;
 }
-.singlesocial{
+.singlesocial {
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     gap: 10px;
     align-items: center;
     justify-content: left;
+    padding: 8px 12px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.singlesocial:hover {
+    transform: translateX(8px); /* Subtle slide to the right */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(0, 179, 255, 0.1)); /* Subtle gradient on hover */
+    box-shadow: -2.5px 0 0 0 #007bff; /* Left border accent - you can change the color */
+    border-radius: 5px;
+
+}   
+
+/* Optional: add a smoother entrance/exit for the hover state */
+.singlesocial::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #007bff; /* Match your brand color */
+    transition: width 0.3s ease;
+    border-radius: 5px;
+
+}
+
+.singlesocial:hover::after {
+    width: 100%;
 }
 .footerp{
     font-size: 14px;
@@ -59,9 +89,12 @@
 }
 .socials{
     display: flex;
+    /* padding: 10px; */
     flex-direction: column;
     justify-content: center;
-    gap: 25px;
+    gap: 17px;
+    /* background-color: rgba(255, 255, 255, 0.082); */
+    border-radius: 5px;
 }
 
 .contactupper{
