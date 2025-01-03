@@ -1,5 +1,4 @@
 "use client"; // Add this directive at the top
-
 import styles from "../Styles/model3d.css";
 import Spline from "@splinetool/react-spline";
 
