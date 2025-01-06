@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Aboutme() {
   return (
     <div className="aboutmeouter">
-    <div className="aboutme">
+    <div className="aboutmeOriginal">
       <p className="head">
         Why <span id="me">Me</span>
       </p>

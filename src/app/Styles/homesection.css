@@ -20,7 +20,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 70px;
+    gap: 40px;
     margin-bottom: 50px;
   }
   .main{
@@ -41,7 +41,7 @@
   .homet2{
     padding: 0px 20px;
 
-    background: linear-gradient(to right, #000046, #0000d4); 
+    background: linear-gradient(to right, #000046, #0000ff); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
         font-size: 96px;
@@ -76,7 +76,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to right, #000046, #0000d4);
+    background: linear-gradient(to right, #000046, #0000ff); 
     position: relative;
     overflow: hidden;
     gap: 7px;
