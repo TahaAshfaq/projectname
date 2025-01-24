@@ -11,21 +11,17 @@
     margin-bottom: 100px;
 
   }
-  /* .model3dmobile{
+  .model3dmobile{
     display: none;
-  } */
+  }
   @media (max-width: 850px) {
-    /* .model3d{
-      display: none;
-    } */
-    /* .model3dmobile{
-      display:flex;
-      height: 400px;
-      width: 100%;
-    } */
     .model3d{
+      display: none;
+    }
+    .model3dmobile{
       display:flex;
       height: 400px;
       width: 100%;
     }
+     
   }
