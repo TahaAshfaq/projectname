@@ -33,6 +33,11 @@ export default function Homesection() {
         { x: -100, opacity: 0 },
         { x: 0, opacity: 1, duration: 1, ease: "power3.out", delay: 0.3 }
       );
+      gsap.fromTo(
+        ".homet3mobile",
+        { x: -100, opacity: 0 },
+        { x: 0, opacity: 1, duration: 1, ease: "power3.out", delay: 0.3 }
+      );
     };
   
     if (document.readyState === "complete") {
