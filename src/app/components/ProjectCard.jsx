@@ -49,6 +49,8 @@ export default function ProjectCard(props) {
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
+      
+      onClick={() => openLink(props.address)}
     >
       <p className="projectcardt1">{props.pt1}</p>
       <p className="projectcardt2">
