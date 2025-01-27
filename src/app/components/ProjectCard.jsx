@@ -3,6 +3,14 @@ import React, { useEffect } from "react";
 import style from "../Styles/services.css";
 
 export default function ProjectCard(props) {
+  // Define the openLink function
+  const openLink = (url) => {
+    if (url) {
+      window.open(url, "_blank"); // Open the link in a new tab
+    } else {
+      console.error("URL is undefined");
+    }
+  };
   useEffect(() => {
     const buttons = document.querySelectorAll(".viewproject");
 
@@ -52,7 +60,9 @@ export default function ProjectCard(props) {
         <br />
         {props.pt3}
       </p>
-      <button className="viewproject">View</button>
+      <button className="viewproject" onClick={() => openLink(props.address)}>
+        View
+      </button>
     </div>
   );
 }

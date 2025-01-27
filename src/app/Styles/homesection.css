@@ -35,6 +35,7 @@
     font-weight: 400;
     letter-spacing: 1.12px;
 
+    opacity: 0;
 
 
   }
@@ -52,6 +53,9 @@
     letter-spacing: -5px;
 
 
+    opacity: 0;
+
+
   }
 
   .homet3{
@@ -59,7 +63,11 @@
     margin-top: 0px;
     font-size: 18px;
     font-weight: 300;
-    color: #33336B;    
+    color: #33336B;   
+    
+    
+    opacity: 0;
+
   }
   .home2svg{
     margin-top: -50px;

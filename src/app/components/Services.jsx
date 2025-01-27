@@ -21,7 +21,7 @@ export default function Services() {
   });
 
   return (
-    <div className="aboutmeouter">
+    <div className="aboutmeouter" id="services">
 
     <div className="aboutme">
       <p className="head">My Services</p>

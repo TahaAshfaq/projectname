@@ -17,12 +17,13 @@ export default function Projects() {
           pcolor={singleproject.projectheading2precolor}
           pt2={singleproject.projectheading2}
           pt3={singleproject.projectheading3}
+          address={singleproject.address}
         />
       );
     });
 
   return (
-    <div className="aboutmeouter">
+    <div className="aboutmeouter" id="projects">
 
     <div className="aboutme">
       <p className="head">My Projects</p>
