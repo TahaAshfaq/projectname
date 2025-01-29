@@ -26,7 +26,7 @@ export default function Projects() {
     <div className="aboutmeouter" id="projects">
 
     <div className="aboutme">
-      <p className="head">My Projects</p>
+      <p className="head">Latest Projects</p>
       <p className="servicescontent">
         Here are some of the favorite and best projects I have done so far as a
         creative designer
