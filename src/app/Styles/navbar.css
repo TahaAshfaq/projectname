@@ -123,7 +123,7 @@ display: none;}
   }
 
   .mobileMenu {
-    display: flex;
+    visibility: hidden;
     position: fixed; 
     top: 0; /* Sticks the navbar to the top */
     z-index: 1000; /* Optional: Keep it above other elements */
@@ -142,6 +142,7 @@ display: none;}
   }
   
   .mobileMenu.active {
+    visibility: visible;
     opacity: 1;
     margin-left: 0px;
     align-self: center;
