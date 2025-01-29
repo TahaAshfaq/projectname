@@ -94,8 +94,8 @@ export default function Aboutme() {
               <span
                 key={index}
                 style={{
-                  transition: 'color 0.7s ease',
-                  color: shouldHighlight ? '#33336B' : '#fff',
+                  transition: 'color 0.3s ease',
+                  color: shouldHighlight ? '#33336B' : '#E5E5FB',
                   display: 'inline'
                 }}
               >
