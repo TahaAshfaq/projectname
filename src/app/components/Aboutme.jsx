@@ -95,7 +95,7 @@ export default function Aboutme() {
                 key={index}
                 style={{
                   transition: 'color 0.3s ease',
-                  color: shouldHighlight ? '#33336B' : '#ccc',
+                  color: shouldHighlight ? '#33336B' : '#fff',
                   display: 'inline'
                 }}
               >
