@@ -12,6 +12,7 @@
 
   }
   .model3dmobile{
+    margin-top: -70px;
     /* display: none; */
   }
   @media (max-width: 850px) {
