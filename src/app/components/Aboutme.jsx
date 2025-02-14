@@ -60,10 +60,9 @@ export default function Aboutme() {
               <span
                 key={index}
                 style={{
-                  transition: "background-color 0.7s ease",
-                  backgroundColor: shouldHighlight ? "#CEE4FF" : "transparent",
-                  display: "inline-block",
-                  padding: "0px 5px"
+                  transition: "color 0.7s ease",
+                  color: shouldHighlight ? "#33336B" : "#E5E5FB",
+                  display: "inline",
                 }}
               >
                 {word}{" "}
