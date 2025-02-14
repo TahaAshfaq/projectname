@@ -20,8 +20,8 @@ const data = [
     {
       id:"4",  
       imagePath: "/Frame4.svg",
-      heading: "Digital Product",
-      description: "Developing functional and responsive digital products."
+      heading: "3d Web Designs",
+      description: "Developing functional and responsive 3d websites."
     },
     {
       id:"5",  
@@ -32,8 +32,8 @@ const data = [
     {
       id:"6",  
       imagePath: "/Frame6.svg",
-      heading: "Logos & Illustrations",
-      description: "Designing memorable logos and custom illustrations."
+      heading: "Wireframing",
+      description: "Developing functional and responsive wireframes."
     }
   ];
   

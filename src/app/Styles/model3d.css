@@ -1,4 +1,4 @@
-/* Reset */
+/* Reset
 * {
     margin: 0;
     padding: 0;
@@ -12,8 +12,6 @@
 
   }
   .model3dmobile{
-    /* margin-top: -100px;
-    height: 610px; */
     display: none;
   }
   @media (max-width: 850px) {
@@ -27,4 +25,4 @@
       margin-top: -70px;
     }
      
-  }
+  } */

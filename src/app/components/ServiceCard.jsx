@@ -4,28 +4,6 @@ import cardpic from "../media/cardpic.svg";
 import { useEffect, useRef, useState } from 'react';
 
 import Image from "next/image";
-
-// export default function Services(props) {
-//   return (
-//     <div className="servicecard">
-//       <Image
-//         className="servicepic"
-//         src={props.path}
-//         alt="servicCards"
-//         width={70}
-//         height={70}
-//       />
-//       <p className="cardhead">{props.head}</p>
-//       <p className="cardcontent">
-//       {props.content}
-//       </p>
-//     </div>
-//   );
-// }
-
-
-
-
 export default function ServiceCard(props) {
   const cardRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
