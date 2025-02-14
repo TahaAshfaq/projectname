@@ -13,11 +13,13 @@
   }*/
   .model3dmobile{
     height: 650px;
+    margin-top: -70px;
+
    } 
   @media (max-width: 850px) {
-    .model3d{
+    /* .model3d{
       display: none;
-    }
+    } */
     .model3dmobile{
       display:flex;
       height: 460px;
