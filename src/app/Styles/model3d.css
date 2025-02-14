@@ -10,10 +10,10 @@
     height: 100%;
     margin-bottom: 100px;
 
-  }
+  }*/
   .model3dmobile{
-    display: none;
-  }
+    height: 100%;
+   } 
   @media (max-width: 850px) {
     .model3d{
       display: none;
@@ -22,7 +22,7 @@
       display:flex;
       height: 460px;
       width: 100%;
-      margin-top: -70px;
+      margin-top: -100px;
     }
      
-  } */
+  } 
