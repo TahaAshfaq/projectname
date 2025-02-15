@@ -8,7 +8,6 @@ import Image from "next/image";
 
 export default function Services() {
 
-  // Correcting the map function
   const myservicescard = myservices.map((singlecard) => {
     return (
       <ServiceCard

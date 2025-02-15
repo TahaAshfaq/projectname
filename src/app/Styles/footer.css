@@ -9,7 +9,6 @@
         justify-content: center;
         align-items: center;
       background: linear-gradient(to bottom, #00008a, #0000ff); 
-      background-color: #0000ff;
       margin-top: 100px;
   }
   .footerouter{
@@ -183,17 +182,6 @@
  
  }
  @media (max-width: 770px) {
-
-    /* .footerhead{
-        font-size: 45px;
-        line-height: 69px;
-        letter-spacing: -2.5px;
-    } */
-    /* .footcontent{ 
-        flex-direction: column;
-        align-items:start;
-        justify-items: start;
-    } */
     .foot{
         padding: 50px 30px;
     }
@@ -244,9 +232,3 @@
 
     }
 }
-/* @media (max-width: 370px) {
-    .footimg{
-        width: 250px;
-    }
-} */
-  

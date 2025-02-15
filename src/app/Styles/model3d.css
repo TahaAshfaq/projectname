@@ -1,25 +1,9 @@
-/* Reset
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  .model3d{
-    margin-top: -70px;
-    z-index: -1;
-    height: 100%;
-    margin-bottom: 100px;
-
-  }*/
-  .model3dmobile{
+.model3dmobile{
     height: 650px;
     margin-top: -70px;
 
    } 
   @media (max-width: 850px) {
-    /* .model3d{
-      display: none;
-    } */
     .model3dmobile{
       display:flex;
       height: 460px;

@@ -32,8 +32,12 @@ export default function Loadingscreen() {
           style={{ height: "330px", width: "330px" }}
         />
         <p id="loadingp">
-          Taha Ashfaq Product UX designer
+          Loading
+          <span className="dot">.</span>
+          <span className="dot">.</span>
+          <span className="dot">.</span>
         </p>
+
       </div>
     </div>
   );
