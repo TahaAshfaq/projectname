@@ -8,6 +8,7 @@ import Services from "./components/Services.jsx";
 import Loadingscreen from "./components/Loadingscreen.jsx";
 import Model3d from "./components/Model3d.jsx";
 import Projects from "./components/Projects.jsx";
+import RiveAnimation from "./components/RiveAnimation.jsx";
 import Footer from "./components/Footer.jsx";
 import { useState, useEffect } from "react";
 
@@ -40,6 +41,7 @@ const MainContent = () => {
       <Homesection />
       <Model3d />
       <Aboutme />
+      <RiveAnimation />
       <Services />
       <Projects />
       <Footer />

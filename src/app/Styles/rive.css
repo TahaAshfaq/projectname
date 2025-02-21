@@ -1,0 +1,37 @@
+.rive{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rive-animation{
+    width: 1000px;
+    height:800px;
+}
+@media (max-width: 1230px) {
+    .rive-animation{
+        width: 900px;
+        height:700px;
+    }
+
+}
+@media (max-width: 950px) {
+    .rive-animation{
+        width: 700px;
+        height:500px;
+    }
+
+}
+@media (max-width: 750px) {
+    .rive-animation{
+        width: 600px;
+        height:400px;
+    }
+
+}
+@media (max-width: 530px) {
+    .rive-animation{
+        width: 350px;
+        height:300px;
+    }
+
+}
