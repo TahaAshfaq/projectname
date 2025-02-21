@@ -31,7 +31,7 @@
     }
 
 }
-@media (max-width: 750px) {
+@media (max-width: 650px) {
     .rive2{
         width: 0px;
         height:0px;
@@ -40,13 +40,21 @@
         width: 0px;
         height:0px;
     }
-    .rive{
-        height:370px;
+    .rive {
+        height: 435px;
+        display: flex;
+        justify-content: center;  /* Centers horizontally */
+        align-items: center;      /* Centers vertically */
+        overflow: hidden;         /* Prevents unwanted scrolling */
+        position: relative;       /* Keeps the animation within bounds */
+        width: 100vw;             /* Ensures full screen width */
     }
-    .rive-animation{
+    
+    .rive-animation {
         position: absolute;
         width: 600px;
-        height:1000px;
-    }
+        height: 1000px;
 
+    }
+    
 }
