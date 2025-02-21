@@ -32,6 +32,10 @@
 
 }
 @media (max-width: 750px) {
+    .rive2{
+        width: 0px;
+        height:0px;
+    }
     .rive-animation2{
         width: 0px;
         height:0px;
