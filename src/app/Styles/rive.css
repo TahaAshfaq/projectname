@@ -41,9 +41,10 @@
         height:0px;
     }
     .rive{
-        height:400px;
+        height:370px;
     }
     .rive-animation{
+        position: absolute;
         width: 600px;
         height:1000px;
     }
