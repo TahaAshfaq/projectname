@@ -1,4 +1,4 @@
-.rive2{
+/* .rive2{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,11 +43,11 @@
     .rive {
         height: 435px;
         display: flex;
-        justify-content: center;  /* Centers horizontally */
-        align-items: center;      /* Centers vertically */
-        overflow: hidden;         /* Prevents unwanted scrolling */
-        position: relative;       /* Keeps the animation within bounds */
-        width: 100vw;             /* Ensures full screen width */
+        justify-content: center; 
+        align-items: center;     
+        overflow: hidden;         
+        position: relative;      
+        width: 100vw;            
     }
     
     .rive-animation {
@@ -55,4 +55,4 @@
         width: 600px;
         height: 1000px;
     }
-}
+} */
