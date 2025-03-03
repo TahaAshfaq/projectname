@@ -41,7 +41,7 @@ const MainContent = () => {
       <Homesection />
       <Model3d />
       <Aboutme />
-      <RiveAnimation />
+      {/* <RiveAnimation /> */}
       <Services />
       <Projects />
       <Footer />
