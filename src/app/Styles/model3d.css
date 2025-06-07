@@ -1,9 +1,18 @@
 .model3dmobile{
+    display: none;
+    
+
+   } 
+   .model3d{
     height: 650px;
     margin-top: -70px;
 
    } 
   @media (max-width: 850px) {
+    .model3d{
+      display: none;
+  
+     } 
     .model3dmobile{
       display:flex;
       height: 460px;

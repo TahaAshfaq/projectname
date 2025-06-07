@@ -65,11 +65,11 @@ export default function Footer() {
                 <div
                   className="singlesocial"
                   onClick={() =>
-                    openLink("https://github.com/TahaAshfaq")
+                    openLink("https://www.behance.net/tahaashfaq5")
                   }
                 >
                   <Image src={pic5} alt="GitHub" width={20} height={20} />
-                  <p className="footerp">GITHUB</p>
+                  <p className="footerp">Behance</p>
                 </div>
                 <div
                   className="singlesocial"
