@@ -9,7 +9,7 @@ export default function Model3d() {
         <Spline scene="https://prod.spline.design/QkCQ7ys0q8ajvnPD/scene.splinecode" />
       </div>
       <div className="model3dmobile">
-        <Spline scene="https://prod.spline.design/r3Utd8mu5lHL0D8G/scene.splinecode" />
+        <Spline scene="https://prod.spline.design/VFM264cbv5M-dq0g/scene.splinecode" />
       </div>
     </>
   );
