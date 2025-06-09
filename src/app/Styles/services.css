@@ -153,29 +153,26 @@
     gap: 20px;
     margin-left: 20px;
 }
-
 .projectcard {
   width: 535px;
   height: 333.04px;
   display: flex;
   flex-direction: column;
   align-items:flex-start;
-  justify-content: flex-start; 
-  padding: 12px 17px;
-  gap: 73px; 
-  border-radius: 5px;
+  justify-content: flex-end; 
+  padding: 20px;
+  gap: 7px; 
+  border-radius: 10px;
   position: relative; 
   overflow: hidden; 
-
-transform: translateY(30px);
-opacity: 0;
-transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
 }
 .projectcard.show {
   transform: translateY(0);
   opacity: 1;
 }
-
 .projectcard::before {
   content: "";
   position: absolute;
@@ -183,17 +180,15 @@ transition: transform 0.6s ease-out, opacity 0.6s ease-out;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000000; 
-  opacity: 0.7; 
+background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
   z-index: 0;  
   border-radius: 5px; 
   transition: opacity 0.5s ease-in;
   cursor: pointer;
-
 }
 
 .projectcard:hover::before {
-  opacity: 0.6; 
+  opacity: 0.8; 
 }
 .projectcard * {
   position: relative;
@@ -202,24 +197,47 @@ transition: transform 0.6s ease-out, opacity 0.6s ease-out;
   transition: opacity 0.3s ease;
 }
 
-.projectcardt1,
+/* .projectcardt1,
 .projectcardt2{
-  position: relative; /* Ensure content is above the background */
+  position: relative; 
   z-index: 1;
-  color: white; /* Fully opaque text and button */
+  color: rgb(255, 255, 255);
+} */
+.projectcardt2{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  color: rgb(255, 255, 255);
 }
 
 .projectcardt1 {
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 200;
+}
+.pt1div{
+  margin-left: -3px;
+padding: 5px 12px;
+  background: rgba(255, 255, 255, 0.17); 
+  border-radius: 100px;
+  color: white;
+
+  /* Glassmorphism additions */
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px); 
+  /* border: 1px solid rgba(255, 255, 255, 0.3); */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
-.projectcardt2 {
-  font-size: 32px;
-  line-height: 37px;
-  font-weight: 500;
+.projectcardtext {
+  width: 80%;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 200;
+  letter-spacing: 0%;
+  opacity: 55%; /* Semi-transparent text */
 }
-
+/* 
 .viewproject {
   width: 120px;
   height: 30px;
@@ -227,13 +245,13 @@ transition: transform 0.6s ease-out, opacity 0.6s ease-out;
   font-weight: 400;
   font-family: inherit; 
   background-color: hsla(0, 0%, 100%, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0); /* Subtle initial border */
+  border: 1px solid rgba(255, 255, 255, 0); 
   border-radius: 5px;
   color: white;
   cursor: pointer; 
   position: relative; 
   overflow: hidden;
-  --mouse-x: 50%; /* Default glow position */
+  --mouse-x: 50%; 
   --mouse-y: 50%;
   transition: border-color 0.3s ease;
 }
@@ -243,25 +261,23 @@ transition: transform 0.6s ease-out, opacity 0.6s ease-out;
   position: absolute;
   inset: 0;
   border-radius: 5px;
-  padding: 1px; /* Ensure glow stays within the border region */
+  padding: 1px; 
   background: radial-gradient(circle at var(--mouse-x) var(--mouse-y), rgb(255, 255, 255), rgba(255, 255, 255, 0) 80%);
-  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); /* Ensures glow only affects the border */
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); 
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   mask-composite: exclude;
   -webkit-mask-composite: destination-out;
-  z-index: -1; /* Stays behind content */
+  z-index: -1;
   transition: opacity 0.3s ease, background 0.3s ease;
-  opacity: 0; /* Hidden until hover */
+  opacity: 0; 
 }
 
 .viewproject:hover::before {
-  opacity: 1; /* Activate border glow on hover */
-}
-
+  opacity: 1; }
 .viewproject:hover {
-  border-color: rgba(255, 255, 255, 0); /* Subtle enhancement of base border */
+  border-color: rgba(255, 255, 255, 0); 
   background-color: transparent;
-}
+} */
 
 @media (max-width: 1330px) {
   .myprojects {
@@ -291,27 +307,21 @@ transition: transform 0.6s ease-out, opacity 0.6s ease-out;
   }
   
 @media (max-width: 950px) {
+  .projectcardtext {
+  width: 100%;
+}
  
   .myservices{
     grid-template-columns: repeat(2, 1fr);
-}
-.projectcard {
-  gap: 87px; 
-}
-.projectcardt2 {
-  font-size: 24px;
-  line-height: 28px;
 }
   }
 
 @media (max-width: 770px) {
   .servicescontent{
-
     font-size: 18px;
     font-weight: 300;
     color: #33336B;
     line-height: 170%;
-
     margin-top: -20px;
     margin-left: -20px;
   }
@@ -331,18 +341,10 @@ transition: transform 0.6s ease-out, opacity 0.6s ease-out;
   }
   .projectcard {
     height: 425px;
-    gap: 267px;
-  }
-  .projectcardt2 {
-    font-size: 32px;
-    line-height: 37px;
-    font-weight: 500;
-  }
-  .viewproject{
-    display: none;
   }
 }
 @media (max-width: 615px) {
+  
   .myservices{
     grid-template-columns: repeat(1, 1fr);
     padding-right: 0px;
@@ -350,11 +352,11 @@ transition: transform 0.6s ease-out, opacity 0.6s ease-out;
 }
 .projectcard {
   height: 225px;
-  gap: 107px;
+  padding: 15px;
 }
 .projectcardt2 {
   font-size: 20px;
-  line-height: 24px;
+  line-height: 20px;
 }
 }
 

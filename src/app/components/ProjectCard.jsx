@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from "react";
 
 export default function ProjectCard(props) {
   const cardRef = useRef(null);
@@ -13,7 +13,7 @@ export default function ProjectCard(props) {
       },
       {
         threshold: 0.1,
-        rootMargin: '50px'
+        rootMargin: "50px",
       }
     );
 
@@ -68,25 +68,30 @@ export default function ProjectCard(props) {
   return (
     <div
       ref={cardRef}
-      className={`projectcard ${isVisible ? 'show' : ''}`}
+      className={`projectcard ${isVisible ? "show" : ""}`}
       style={{
-                backgroundImage: `url(${props.pimg})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
+        backgroundImage: `url(${props.pimg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
       onClick={() => openLink(props.address)}
     >
-      <p className={`projectcardt1 ${isVisible ? 'show' : ''}`}>{props.pt1}</p>
-      <p className={`projectcardt2 ${isVisible ? 'show' : ''}`}>
-        <span className="colort" style={{ color: props.pcolor }}>
+      <div className="pt1div">
+        <p className={`projectcardt1 ${isVisible ? "show" : ""}`}>
+          {props.pt1}
+        </p>
+      </div>
+      <div style={{ display: "flex", flexDirection: "column", gap: "3px" }}>
+        <p className={`projectcardt2 ${isVisible ? "show" : ""}`}>
           {props.pt2pre}
-        </span>
-        <br />
-        {props.pt2}
-        <br />
-        {props.pt3}
-      </p>
-      <button 
+        </p>
+        <p className="projectcardtext">
+          {props.pt2}
+          {/* <br />
+          {props.pt3} */}
+        </p>
+      </div>
+      {/* <button 
         className={`viewproject ${isVisible ? 'show' : ''}`} 
         onClick={(e) => {
           e.stopPropagation();
@@ -94,7 +99,7 @@ export default function ProjectCard(props) {
         }}
       >
         View
-      </button>
+      </button> */}
     </div>
   );
 }

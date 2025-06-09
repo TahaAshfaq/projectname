@@ -14,9 +14,7 @@ export default function Projects() {
           pimg={singleproject.projectImagePath}
           pt1={singleproject.projectheading1}
           pt2pre={singleproject.projectheading2pre}
-          pcolor={singleproject.projectheading2precolor}
           pt2={singleproject.projectheading2}
-          pt3={singleproject.projectheading3}
           address={singleproject.address}
         />
       );
@@ -28,8 +26,7 @@ export default function Projects() {
     <div className="aboutme">
       <p className="head">Latest Projects</p>
       <p className="servicescontent">
-        Here are some of the favorite and best projects I have done so far as a
-        creative designer
+        Explore My Most Recent Projects. A Showcase of Innovation, Creativity, and Problem-Solving.
       </p>
       <div className="myprojects">
       {myprojectcards}
