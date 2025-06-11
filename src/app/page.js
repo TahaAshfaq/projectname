@@ -9,6 +9,8 @@ import Loadingscreen from "./components/Loadingscreen.jsx";
 import Model3d from "./components/Model3d.jsx";
 import Projects from "./components/Projects.jsx";
 import RiveAnimation from "./components/RiveAnimation.jsx";
+import StickyNotification from "./components/StickyNotification.jsx";
+
 import Footer from "./components/Footer.jsx";
 import { useState, useEffect } from "react";
 
@@ -37,6 +39,7 @@ const MainContent = () => {
   return (
     <div className={poppins.className}>
       {" "}
+      <StickyNotification />
       <Navbar />
       <Homesection />
       <Model3d />
