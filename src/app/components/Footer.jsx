@@ -1,4 +1,3 @@
-
 "use client"; // Add this directive at the top
 import styles from "../Styles/footer.css";
 import pic1 from "../media/mylogo.svg";
@@ -46,21 +45,21 @@ export default function Footer() {
               <div className="socials">
                 <div
                   className="singlesocial"
-                  onClick={() =>
-                    openLink("https://dribbble.com/TAHA9753")
-                  }
+                  onClick={() => openLink("https://dribbble.com/TAHA9753")}
                 >
                   <Image src={pic2} alt="Dribbble" width={20} height={20} />
-                  <p className="footerp">DRIBBBLE</p>
+                  <p className="footerp">Dribbble</p>
                 </div>
                 <div
                   className="singlesocial"
                   onClick={() =>
-                    openLink("https://www.linkedin.com/in/taha-ashfaq-637874273/")
+                    openLink(
+                      "https://www.linkedin.com/in/taha-ashfaq-637874273/"
+                    )
                   }
                 >
                   <Image src={pic6} alt="LinkedIn" width={20} height={20} />
-                  <p className="footerp">LINKEDIN</p>
+                  <p className="footerp">Linked In</p>
                 </div>
                 <div
                   className="singlesocial"
@@ -74,52 +73,47 @@ export default function Footer() {
                 <div
                   className="singlesocial"
                   onClick={() =>
-                    openLink("https://www.instagram.com/taha__9753/")
+                    openLink("https://medium.com/@tahaashfaqmalik")
                   }
                 >
                   <Image src={pic4} alt="Instagram" width={20} height={20} />
-                  <p className="footerp">INSTAGRAM</p>
+                  <p className="footerp">Medium</p>
                 </div>
               </div>
               <div className="contacts">
-                <div className="singlecontact"
-                onClick={() =>
-                  openLink("tel:03090109962")
-                }>
-                
+                <div
+                  className="singlecontact"
+                  onClick={() => openLink("tel:03090109962")}
+                >
                   <div className="contactupper">
                     <Image src={pic8} alt="Phone" width={20} height={20} />
                     <p className="contactpupper">Phone</p>
                   </div>
                   <p className="contactpdown">0309 0109962</p>
                 </div>
-                <div className="singlecontact"
-                onClick={() =>
-                  openLink(
-                    "https://www.google.com/maps/place/Margalla+Town,+Islamabad"
-                  )
-                }>
-                
+                <div
+                  className="singlecontact"
+                  onClick={() =>
+                    openLink(
+                      "https://www.google.com/maps/place/Margalla+Town,+Islamabad"
+                    )
+                  }
+                >
                   <div className="contactupper">
                     <Image src={pic7} alt="Location" width={20} height={20} />
                     <p className="contactpupper">Location</p>
                   </div>
                   <p className="contactpdown">Margalla Town, Islamabad</p>
                 </div>
-                <div className="singlecontact"
-                onClick={() =>
-                  openLink("mailto:tahaashfaqmalik@gmail.com")
-                }>
-                  
+                <div
+                  className="singlecontact"
+                  onClick={() => openLink("mailto:tahaashfaqmalik@gmail.com")}
+                >
                   <div className="contactupper">
                     <Image src={pic3} alt="Email" width={20} height={20} />
                     <p className="contactpupper">Email</p>
                   </div>
-                  <p
-                    className="contactpdown"
-                  >
-                    tahaashfaqmalik@gmail.com
-                  </p>
+                  <p className="contactpdown">tahaashfaqmalik@gmail.com</p>
                 </div>
               </div>
             </div>
