@@ -23,17 +23,29 @@ export default function StickyNotification() {
       <div className="notification-card">
         <div className="notification-content">
           <div className="notification-icon">
-            <Image className="icon"src={article} alt="image" width={87} height={87} />
+            <Image
+              className="icon"
+              src={article}
+              alt="image"
+              width={100}
+              height={100}
+            />
           </div>
 
           <div className="notification-body">
-            <h3 className="notification-title">New Article Available</h3>
-            <p className="notification-description">
-              {" "}
-              Read my article on My Product design process of my 1st product
-              design XPERTIFY
+            <p className="notification-description"><span className="green-dot" />
+              Read article on {" "}
+              <span className="bold-highlight">My Product Design Process</span> of
+              job hiring platform
             </p>
-            <button className="notification-cta">Read now →</button>
+            <a
+              href="https://medium.com/@tahaashfaqmalik/product-design-process-xpertify-f6b081da4206"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="notification-cta"
+            >
+              Read now →
+            </a>{" "}
           </div>
 
           <button
@@ -69,6 +81,10 @@ export default function StickyNotification() {
           transform: translateY(30px);
           opacity: 0;
           transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+        }
+        .bold-highlight {
+          font-weight: 500;
+          color: #01016a; /* Optional: Make it stand out */
         }
 
         .notification-container.show {
@@ -183,22 +199,14 @@ export default function StickyNotification() {
           background: rgba(0, 0, 0, 0.05);
         }
 
-        .notification-title {
-          font-size: 12px;
-          font-weight: 500;
-          color: #01016a;
-          margin-bottom: 5px;
-          transition: color 0.3s ease,
-            transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-        }
-
+        
         .notification-card:hover .notification-title {
           color: #3a7bd5;
           transform: translateY(-2px);
         }
 
         .notification-description {
-          font-size: 12px;
+          font-size: 14px;
           font-weight: 300;
           color: #33336b;
           line-height: 1.4;
@@ -258,11 +266,23 @@ export default function StickyNotification() {
           transform: translateY(0);
           box-shadow: 0 2px 8px rgba(58, 123, 213, 0.3);
         }
+        .green-dot {
+          display: inline-block;
+          width: 8px;
+          height: 8px;
+          background-color: #00c853; /* Green accent */
+          border-radius: 50%;
+          margin-right: 6px;
+          box-shadow: 0 0 6px #00c853;
+          vertical-align: middle;
+          animation: pulse 1.5s infinite;
+        }
 
         @media (max-width: 768px) {
-        .icon{
-        width: 60px;
-        height: 60px;}
+          .icon {
+            width: 60px;
+            height: 60px;
+          }
           .notification-container {
             right: 10px;
             bottom: 10px;
