@@ -239,11 +239,11 @@ export default function StickyNotification() {
           background: linear-gradient(135deg, #3a7bd5, #12009e);
           border: none;
           color: white;
-          font-size: 10px;
+          font-size: 12px;
           font-weight: 500;
           font-family: inherit;
           cursor: pointer;
-          padding: 5px 10px;
+          padding: 7px 14px;
           border-radius: 6px;
           text-decoration: none;
           position: relative;
