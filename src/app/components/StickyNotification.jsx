@@ -23,20 +23,17 @@ export default function StickyNotification() {
       <div className="notification-card">
         <div className="notification-content">
           <div className="notification-icon">
-            <Image
-              className="icon"
-              src={article}
-              alt="image"
-              width={100}
-              height={100}
-            />
+            <Image className="icon" src={article} alt="image" fill />
           </div>
 
           <div className="notification-body">
-            <p className="notification-description"><span className="green-dot" />
-              Read article on {" "}
-              <span className="bold-highlight">My Product Design Process</span> of
-              job hiring platform
+            <p className="notification-description">
+              <span className="green-dot" />
+              Read article on{" "}
+              <span className="bold-highlight">
+                My Product Design Process
+              </span>{" "}
+              of job hiring platform
             </p>
             <a
               href="https://medium.com/@tahaashfaqmalik/product-design-process-xpertify-f6b081da4206"
@@ -81,6 +78,11 @@ export default function StickyNotification() {
           transform: translateY(30px);
           opacity: 0;
           transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+        }
+        .notification-icon {
+          position: relative;
+          width: 80px;
+          height: 100px;
         }
         .bold-highlight {
           font-weight: 500;
@@ -199,7 +201,6 @@ export default function StickyNotification() {
           background: rgba(0, 0, 0, 0.05);
         }
 
-        
         .notification-card:hover .notification-title {
           color: #3a7bd5;
           transform: translateY(-2px);
@@ -279,10 +280,10 @@ export default function StickyNotification() {
         }
 
         @media (max-width: 768px) {
-          .icon {
-            width: 60px;
-            height: 60px;
-          }
+          .notification-icon {
+    width: 50px;
+    height: 70px;
+  }
           .notification-container {
             right: 10px;
             bottom: 10px;
@@ -309,7 +310,7 @@ export default function StickyNotification() {
           }
 
           .notification-description {
-            font-size: 13px;
+            font-size: 14px;
           }
         }
       `}</style>
