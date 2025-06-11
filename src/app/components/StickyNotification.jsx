@@ -22,6 +22,7 @@ export default function StickyNotification() {
     <div className={`notification-container ${isAnimated ? "show" : ""}`}>
       <div className="notification-card">
         <div className="notification-content">
+        <div className="space"></div>
           <div className="notification-icon">
             <Image className="icon" src={article} alt="image" fill />
           </div>
@@ -69,6 +70,9 @@ export default function StickyNotification() {
       </div>
 
       <style jsx>{`
+      .space{
+      width: 80px;
+      }
         .notification-container {
           position: fixed;
           bottom: 20px;
@@ -92,6 +96,17 @@ export default function StickyNotification() {
         .notification-container.show {
           transform: translateY(0);
           opacity: 1;
+        }
+        .notification-card {
+          position: relative;
+          /* existing styles... */
+        }
+        .notification-icon {
+          position: absolute;
+          top: 15px;
+          left: 15px;
+          z-index: 3;
+            transform: translateY(27px) translateX(-27px) scale(1.6);
         }
 
         .notification-card {
@@ -281,9 +296,9 @@ export default function StickyNotification() {
 
         @media (max-width: 768px) {
           .notification-icon {
-    width: 50px;
-    height: 70px;
-  }
+            width: 50px;
+            height: 70px;
+          }
           .notification-container {
             right: 10px;
             bottom: 10px;
