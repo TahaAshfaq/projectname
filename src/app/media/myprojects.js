@@ -15,21 +15,29 @@ const data = [
     projectheading2: "Landing page design for Flowtics, a smart finance Ai platform",
     address: "https://www.behance.net/gallery/227452969/Finance-toll-web-design",
   },
-  {
-    id: "3",
-    projectImagePath: "/pimg2.png",
-    projectheading1: "Branding",
-    projectheading2pre: "Xelestial",
-    projectheading2: "Brand identity design for Xelestial, a men's clothing brand",
-    address: "https://dribbble.com/shots/26118415-Xelestial-Branding",
-  },
+  // {
+  //   id: "3",
+  //   projectImagePath: "/pimg2.png",
+  //   projectheading1: "Branding",
+  //   projectheading2pre: "Xelestial",
+  //   projectheading2: "Brand identity design for Xelestial, a men's clothing brand",
+  //   address: "https://dribbble.com/shots/26118415-Xelestial-Branding",
+  // },
   {
     id: "4",
     projectImagePath: "/pimg4.png",
     projectheading1: "Web app design",
     projectheading2pre: "Workly",
-    projectheading2: "featuring seamless interfaces for workspaces, Kanban boards and more.",
+    projectheading2: "featuring seamless interfaces for workspaces, Kanban boards and more",
     address: "https://dribbble.com/shots/24476736-Workly-application-full-responsive-design",
+  },
+  {
+    id: "5",
+    projectImagePath: "/pimg5.png",
+    projectheading1: "Product design",
+    projectheading2pre: "Chocowi",
+    projectheading2: "An eCommerce platform of barkery items for sellers, buyers and admin",
+    address: "https://www.behance.net/gallery/225061705/Chocowi",
   },
 ];
 
