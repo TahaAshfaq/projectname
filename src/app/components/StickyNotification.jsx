@@ -226,7 +226,7 @@ export default function StickyNotification() {
           font-weight: 300;
           color: #33336b;
           line-height: 1.4;
-          margin-bottom: 12px;
+          margin-bottom: 8px;
           transition: transform 0.5s ease, opacity 0.5s ease;
         }
 
@@ -289,16 +289,13 @@ export default function StickyNotification() {
           background-color: #00c853; /* Green accent */
           border-radius: 50%;
           margin-right: 6px;
-          box-shadow: 0 0 6px #00c853;
+          box-shadow: 0 0 6pxrgba(0, 200, 83, 0.67);
           vertical-align: middle;
           animation: pulse 1.5s infinite;
         }
 
-        @media (max-width: 768px) {
-          .notification-icon {
-            width: 50px;
-            height: 70px;
-          }
+        @media (max-width: 470px) {
+         
           .notification-container {
             right: 10px;
             bottom: 10px;
@@ -311,14 +308,16 @@ export default function StickyNotification() {
           }
 
           .notification-content {
-            padding: 15px;
+            padding: 12px;
             gap: 10px;
           }
 
-          .notification-icon {
-            width: 80px;
-            height: 80px;
-          }
+            .notification-icon {
+          width: 100px;
+          height: 100px;
+          top: 15px;
+          left: 0px;
+        }
 
           .notification-title {
             font-size: 14px;

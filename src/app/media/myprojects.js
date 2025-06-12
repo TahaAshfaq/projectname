@@ -4,16 +4,29 @@ const data = [
     projectImagePath: "/pimg1.png",
     projectheading1: "Product design",
     projectheading2pre: "Zixxt",
-    projectheading2: "A digital eCommerce platform offering services, software, and courses",
-    address: "https://www.behance.net/gallery/225117457/Ecommerce-design-for-Software-services-and-cources",
+    projectheading2:
+      "A digital eCommerce platform offering services, software, and courses",
+    address:
+      "https://www.behance.net/gallery/225117457/Ecommerce-design-for-Software-services-and-cources",
   },
   {
     id: "2",
+    projectImagePath: "/pimg5.png",
+    projectheading1: "Product design",
+    projectheading2pre: "Chocowi",
+    projectheading2:
+      "An eCommerce platform of barkery items for sellers, buyers and admin",
+    address: "https://dribbble.com/shots/25544197-CHOCOWI",
+  },
+  {
+    id: "3",
     projectImagePath: "/pimg3.png",
     projectheading1: "Landing page design",
     projectheading2pre: "Flowtics",
-    projectheading2: "Landing page design for Flowtics, a smart finance Ai platform",
-    address: "https://www.behance.net/gallery/227452969/Finance-toll-web-design",
+    projectheading2:
+      "Landing page design for Flowtics, a smart finance Ai platform",
+    address:
+      "https://www.behance.net/gallery/227452969/Finance-toll-web-design",
   },
   // {
   //   id: "3",
@@ -28,16 +41,10 @@ const data = [
     projectImagePath: "/pimg4.png",
     projectheading1: "Web app design",
     projectheading2pre: "Workly",
-    projectheading2: "featuring seamless interfaces for workspaces, Kanban boards and more",
-    address: "https://dribbble.com/shots/24476736-Workly-application-full-responsive-design",
-  },
-  {
-    id: "5",
-    projectImagePath: "/pimg5.png",
-    projectheading1: "Product design",
-    projectheading2pre: "Chocowi",
-    projectheading2: "An eCommerce platform of barkery items for sellers, buyers and admin",
-    address: "https://www.behance.net/gallery/225061705/Chocowi",
+    projectheading2:
+      "featuring seamless interfaces for workspaces, Kanban boards and more",
+    address:
+      "https://dribbble.com/shots/24476736-Workly-application-full-responsive-design",
   },
 ];
 
